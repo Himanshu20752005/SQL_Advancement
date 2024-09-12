@@ -1,0 +1,5 @@
+select w4.id from weather w3, weather w4
+where datediff(w4.recordDate, w3.recordDate) = 1
+       and w4.temperature > w3.temperature;
+
+// datediff is a function which helps use to find the difference between two date variables in int terms
