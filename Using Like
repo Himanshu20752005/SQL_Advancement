@@ -1,0 +1,8 @@
+Patients With a Condition 
+
+// We are not validating a string hence use 'LIKE' insed of REGEXP 
+
+select *
+from Patients 
+where conditions like 'DIAB1%' or 
+ conditions like '% DIAB1%';
