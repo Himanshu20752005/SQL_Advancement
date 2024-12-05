@@ -1,0 +1,6 @@
+// Using DELETE 
+// Here T1 donsn't  represent a table it respresent row hence deletion of row
+
+delete T1
+from person T1 , Person T2
+where T1.email = T2.email AND T1.id > T2.id;
